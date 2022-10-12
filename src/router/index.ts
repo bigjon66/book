@@ -11,6 +11,21 @@ const routes: Array<RouteConfig> = [
     component: HomeView
   },
   {
+    path: '/sandwich',
+    name: 'Sandwich',
+    component:() => import('../views/SandwichView.vue')
+  },
+  {
+    path: '/random',
+    name: 'Random',
+    component:() => import('../views/Random.vue')
+  },
+  {
+    path: '/baking',
+    name: 'Baking',
+    component:() => import('../views/BakingView.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
